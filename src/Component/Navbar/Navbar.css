@@ -1,0 +1,160 @@
+/* @media only screen and (max-width:600px) {
+    .nav-container {
+        display: none;
+    }
+
+    .nav-container-2 {
+        max-width: 360px;
+        background-color: aqua;
+        margin: 0 auto;
+    }
+} */
+
+@media only screen and (min-width: 601px) {
+    .Navbar {
+        box-shadow: -1px -16px 7px 12px blue;
+        width: 100%;
+        background-color: #ffffff;
+        height: 70px;
+        /* overflow: hidden; */
+    }
+
+    .nav-container-2 {
+        display: block;
+        position: relative;
+    }
+
+    .navbar_2 {
+        min-width: 550px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .navbar_2 h2 {
+        transform: translateY(10px);
+    }
+
+    .unOrderList {
+        margin-top: 20px;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    .nav-menu-control {
+        min-width: 550px;
+        margin: 0 auto;
+    }
+
+    .unOrderList .nav_list {
+        font-size: 16px;
+        list-style: none;
+        padding: 3px 18px;
+        height: 30px;
+        border-bottom: 1px solid #dddbdb;
+    }
+
+    .nav_list:hover {
+        background-color: #222222;
+        color: #ffff;
+
+    }
+
+    .nav-container_1 {
+        display: none;
+    }
+
+
+
+
+
+    .bar-container {
+        width: 27px;
+        position: absolute;
+        right: 0;
+        top: 19px;
+        cursor: pointer;
+    }
+
+    .bar-container .bar {
+        margin-bottom: 4px;
+        height: 4px;
+        width: 28px;
+        border-radius: 3px;
+        background-color: #100f0f;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:768px) {
+    .nav-container_1 {
+        display: block;
+        max-width: 700px;
+        background-color: rgb(145, 197, 197);
+        margin: 0 auto;
+        transition: all .3s ease;
+    }
+
+    .Navbar {
+        box-shadow: -1px -16px 7px 12px blue;
+    }
+
+    .nav-container_1 {
+        display: block;
+    }
+
+
+    .nav-container-2 {
+        display: none;
+    }
+
+    .nav-container_1 .navbar_1 {
+        background-color: #fff;
+        max-height: 90px;
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        justify-content: space-between;
+    }
+
+    .nav-container_1 .navbar_1 ul {
+        display: flex;
+    }
+
+    .nav-container_1 .navbar_1 ul li {
+        list-style: none;
+        font-weight: 400;
+        font-size: 13px;
+        font-family: 'Open Sans', sans-serif;
+        padding: 13px 15px;
+        transform: translateY(6px);
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .nav-container_1 {
+
+        max-width: 900px;
+
+        margin: 0 auto;
+    }
+
+}
