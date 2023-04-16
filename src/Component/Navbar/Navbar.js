@@ -1,9 +1,19 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import "./Navbar.css"
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import "./Navbar.css";
 
 function Navbar() {
-    const [subMenu, setSubMenu] = useState(true)
+    const [bar, setBar] = useState(false);
+    const [service, setService] = useState(false);
+
+    const barClick = () => {
+        setBar(!bar);
+    }
+    const serviceControl = () => {
+        setService(!service);
+        console.log(service);
+    };
+
     return (
         <div className='Navbar'>
             {/* computer nav */}
@@ -39,47 +49,53 @@ function Navbar() {
 
             {/* mobile nav */}
             <div className='nav-container-2'>
-                <div className='navbar_2 position-relative mx-3'>
+                <div className='navbar_2 position-relative px-3'>
                     <div><h2 className=''>I'm Juwel</h2></div>
 
-                    <div className='menu-control '>
+                    <div onClick={barClick} className='menu-control '>
                         <div className='bar-container'>
-                            <div className='bar'></div>
-                            <div className='bar'></div>
-                            <div className='bar m-0'></div>
+                            <div className={bar ? 'active-bar-1 bar ' : 'bar'}></div>
+                            <div className={bar ? 'active-bar-2 bar' : 'bar'}></div>
+                            <div className={bar ? 'active-bar-3 m-0  bar' : 'bar m-0'}></div>
                         </div>
                     </div>
 
                 </div>
                 <div className='unOrderList '>
-                    <div className='nav-menu-control'>
+                    <div className={bar ? 'nav-menu-control-show' : "nav-menu-control-hide"}>
+
                         <NavLink to="/" className="link border-top">
                             <div className='nav_list border-top'>Home</div>
                         </NavLink>
-                        <NavLink to="/about" className="link">
+
+                        <NavLink
+                            to="/about" className="link">
                             <li className='nav_list'>About me</li>
                         </NavLink>
 
 
-                            <NavLink to="/service" className="link position_relative">
-                                <li onClick={()=>setSubMenu(!subMenu)} className='nav_list dropdownMenu '>Service <i className="bi bi-caret-down-fill"></i></li>
-                                <div class={subMenu? "mega-menu__sub-menu" :"mega-menu__sub-menu_hide"}>
-                                    <div className='submenu px-5'>Service 1</div>
-                                    <div className='submenu px-5'>Service 2</div>
-                                    <div className='submenu px-5'>Service 3</div>
-                                </div>
-                            </NavLink>
-
-                       
+                        <NavLink   className="link position_relative">
+                            <li onClick={serviceControl} className='nav_list dropdownMenu '>Service <i className="bi bi-caret-down-fill"></i></li>
+                            <div className={service ? "mega-menu__sub-menu" : "mega-menu__sub-menu_hide"}>
+                                <div className='submenu px-5'>Service 1</div>
+                                <div className='submenu px-5'>Service 2</div>
+                                <div className='submenu px-5'>Service 3</div>
+                            </div>
+                        </NavLink>
 
 
-                        <NavLink to="/portfolio" className="link">
+
+
+                        <NavLink
+                            to="/portfolio" className="link">
                             <li className='nav_list'>Portfolio</li>
                         </NavLink>
-                        <NavLink to="/blog" className="link">
+                        <NavLink
+                            to="/blog" className="link">
                             <li className='nav_list'>Blog posts</li>
                         </NavLink>
-                        <NavLink to="/contact" className="link">
+                        <NavLink
+                            to="/contact" className="link">
                             <li className='nav_list'>Contact me</li>
                         </NavLink>
                     </div>
