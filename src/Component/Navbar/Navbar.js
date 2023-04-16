@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import "./Navbar.css"
 
 function Navbar() {
+    const [subMenu, setSubMenu] = useState(true)
     return (
         <div className='Navbar'>
             {/* computer nav */}
@@ -53,14 +54,25 @@ function Navbar() {
                 <div className='unOrderList '>
                     <div className='nav-menu-control'>
                         <NavLink to="/" className="link border-top">
-                            <div  className='nav_list'>Home</div>
+                            <div className='nav_list border-top'>Home</div>
                         </NavLink>
                         <NavLink to="/about" className="link">
                             <li className='nav_list'>About me</li>
                         </NavLink>
-                        <NavLink to="/service" className="link">
-                            <li className='nav_list'>Service <i className="bi bi-caret-down-fill"></i></li>
-                        </NavLink>
+
+
+                            <NavLink to="/service" className="link position_relative">
+                                <li onClick={()=>setSubMenu(!subMenu)} className='nav_list dropdownMenu '>Service <i className="bi bi-caret-down-fill"></i></li>
+                                <div class={subMenu? "mega-menu__sub-menu" :"mega-menu__sub-menu_hide"}>
+                                    <div className='submenu px-5'>Service 1</div>
+                                    <div className='submenu px-5'>Service 2</div>
+                                    <div className='submenu px-5'>Service 3</div>
+                                </div>
+                            </NavLink>
+
+                       
+
+
                         <NavLink to="/portfolio" className="link">
                             <li className='nav_list'>Portfolio</li>
                         </NavLink>

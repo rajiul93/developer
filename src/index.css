@@ -17,5 +17,8 @@ code {
 }
 .active{
   color: blueviolet !important;
-  background: #222222 !important;
+}
+.active .nav_list{
+  background-color: #222222;
+  color: aliceblue;
 }
