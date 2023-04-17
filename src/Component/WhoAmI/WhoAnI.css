@@ -1,0 +1,45 @@
+@media(max-width:600px){
+.who-am-i{
+    min-width:360px ;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.who-am-i img{
+    width: 100%;
+}
+.who-am-i p{
+    font-size: 13px;
+}
+}
+@media(min-width:601px){
+    .who-am-i{
+        min-width:550px ;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .who-am-i-child{
+        display: grid;
+        grid-template-columns: 48% 48%;
+        gap: 20px;
+        height: 500px;
+        align-items: center;
+    }
+    .who-am-i img{
+        width: 80%;
+    }
+    .who-am-i p{
+        font-size: 13px;
+    }
+}
+@media(min-width:768px){
+
+}
+@media(min-width:992px){
+    .who-am-i{
+        max-width:900px ;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
