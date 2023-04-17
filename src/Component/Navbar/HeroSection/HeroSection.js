@@ -15,7 +15,7 @@ function HeroSection() {
                             <div className="hero-box">
                                 <p className='text-light hero-p '>We specialize in building Shopify e-commerce websites.</p>
                                 <div className="d-flex gap-3 align-items-center">
-                                    <p className='text-warning m-0'>Build your store <i class="bi bi-arrow-right"></i></p>
+                                    <p className='text-warning m-0'>Build your store <i className="bi bi-arrow-right"></i></p>
                                 </div>
                             </div>
 
@@ -26,7 +26,7 @@ function HeroSection() {
                             <div className="hero-box">
                                 <p className='text-light hero-p'>We can create a site to present your brand and company info to make you proud.</p>
                                 <div className="d-flex gap-3 align-items-center">
-                                    <p className='text-warning m-0'>Create a website </p><i class="bi bi-arrow-right text-warning"></i>
+                                    <p className='text-warning m-0'>Create a website </p><i className="bi bi-arrow-right text-warning"></i>
                                 </div>
                             </div>
 
