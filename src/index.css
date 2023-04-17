@@ -52,7 +52,7 @@ overflow: hidden;
 }
 /* button 1 & 2 css  start*/
 
-.button-1:hover{
+.button:hover{
   color: #fff;
 background-color: rgb(21, 38, 219);
 border: 2px solid rgb(21, 38, 219);
