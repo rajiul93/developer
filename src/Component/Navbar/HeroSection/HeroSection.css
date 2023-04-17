@@ -1,0 +1,139 @@
+@media (max-width:600px) {
+    .hero-container {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("https://www.imjuwel.com/wp-content/uploads/2023/03/james-harrison-vpOeXr5wmR4-unsplash.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        z-index: 1 !important;
+        transition: all .4s;
+    }
+
+    .hero-container-color {
+        padding: 0px 15px;
+        background: rgba(0, 0, 0, 0.759);
+        width: 100%;
+        height: 400px;
+        z-index: 1;
+    }
+
+    .hero-container-width-control {
+        min-width: 550px;
+        height: 400px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .hero-container h3 {
+        font-size: 20px;
+        line-height: 1.2em;
+    }
+
+    .hero-container p {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+}
+
+@media only screen and (min-width: 601px) {
+    .hero-container-width-control {
+        min-width: 550px;
+        height: 350px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .hero-container {
+        width: 100%;
+        height: 350px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("https://www.imjuwel.com/wp-content/uploads/2023/03/james-harrison-vpOeXr5wmR4-unsplash.jpg");
+        background-position: center;
+        transition: all .4s;
+        background-attachment: fixed;
+    }
+
+    .hero-container-color {
+        background: rgba(0, 0, 0, 0.815);
+        padding: 0px 15px;
+        width: 100%;
+        height: 350px;
+        z-index: 1;
+    }
+
+    .hero-container h3 {
+        font-size: 22px;
+    }
+
+    .hero-container p {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .hero-box {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        transition: .3s;
+    }
+
+    .hero-p {
+        width: 270px;
+        transition: all .4s;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .hero-container {
+        height: 500px;
+        transition: all .4s;
+
+    }
+
+    .hero-container-width-control {
+        min-width: 700px;
+        height: 500px;
+    }
+
+    .hero-container-color {
+        height: 500px;
+    }
+
+    .hero-container h3 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .hero-container .hero-h3 {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .hero-container p {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .hero-p {
+        width: 470px;
+        transition: all .4s;
+
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .hero-container-width-control {
+        width: 900px;
+        margin: 0 auto;
+        vertical-align: middle;
+
+    }
+}

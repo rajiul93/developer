@@ -19,7 +19,7 @@ function Navbar() {
             {/* computer nav */}
             <div className='nav-container_1'>
                 <div className='navbar_1'>
-                    <div><h2 className='fs-4'>I'm Juwel</h2></div>
+                    <div><h2 className='fs-4 mt-2'>I'm Juwel</h2></div>
 
                     <ul >
                         <NavLink to="/" className="link">

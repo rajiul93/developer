@@ -16,7 +16,7 @@
         height: 70px;
         margin: 0 auto;
         display: flex;
-        z-index: 2 !important;
+        z-index: 1000 !important;
         background-color: #fff;
         justify-content: space-between;
     }
@@ -27,6 +27,8 @@
 
     .unOrderList {
         margin-top: 31px;
+        z-index: 1000 !important;
+
         background-color: rgb(255, 255, 255);
     }
 
@@ -35,21 +37,22 @@
         margin: 0 auto;
         transform: translateY(-230px);
         height: 0;
-        opacity: 0;
-        z-index: 1 !important;
-        
-        transition:all .5s;
+        z-index: 1000 !important;
 
+        transition:all .2s;
     }
     .nav-menu-control-show{
+        z-index: 1000 !important;
+
         min-width: 360px;
         margin: 0 auto;
         height:80px;
         transform: translateY(-30px);
-
         transition:all .5s;
     }
     .unOrderList .nav_list {
+        z-index: 1000 !important;
+
         font-size: 15px;
         list-style: none;
         padding: 3px 18px;
@@ -62,6 +65,8 @@
     .nav_list:hover {
         background-color: #222222;
         color: #ffff;
+        z-index: 1000 !important;
+
     }
 
     .nav-container_1 {
@@ -165,11 +170,8 @@
         margin: 0 auto;
         transform: translateY(-230px);
         height: 0;
-        opacity: 0;
         z-index: 1 !important;
-        
-        transition:all .5s;
-
+        transition:all .2s;
     }
     .nav-menu-control-show{
         transform: translateY(-19px);
@@ -182,6 +184,7 @@
     .unOrderList {
         margin-top: 20px;
         background-color: rgb(255, 255, 255);
+        z-index: 1000;
 
     }
 
@@ -191,10 +194,10 @@
     }
 
     .unOrderList .nav_list {
-        font-size: 16px;
+        font-size: 15px;
         list-style: none;
         padding: 3px 18px;
-        height: 30px;
+        height: 30px !important;
         border-bottom: 1px solid #dddbdb;
         background-color: rgb(255, 255, 255);
 
@@ -294,25 +297,20 @@
 @media only screen and (min-width:768px) {
     .nav-container_1 {
         display: block;
-        max-width: 700px;
-        background-color: rgb(145, 197, 197);
+        min-width: 700px;
+        padding: 0px 15px;
         margin: 0 auto;
         transition: all .3s ease;
     }
-
     .Navbar {
         box-shadow: -1px -16px 7px 12px blue;
     }
-
     .nav-container_1 {
         display: block;
     }
-
-
     .nav-container-2 {
         display: none;
     }
-
     .nav-container_1 .navbar_1 {
         background-color: #fff;
         max-height: 100px;
@@ -321,11 +319,9 @@
         vertical-align: middle;
         justify-content: space-between;
     }
-
     .nav-container_1 .navbar_1 ul {
         display: flex;
     }
-
     .nav-container_1 .navbar_1 ul li {
         list-style: none;
         font-weight: 400;
@@ -335,7 +331,6 @@
         transform: translateY(6px);
     }
 }
-
 @media only screen and (min-width:992px) {
     .nav-container_1 {
 
