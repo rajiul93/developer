@@ -20,7 +20,7 @@
     }
 
     .hero-container-width-control {
-        min-width: 550px;
+        min-width: 360px;
         height: 400px;
         margin: 0 auto;
         display: flex;
