@@ -3,7 +3,6 @@ import Data from "../../Data/Data.json";
 import "./Service.css";
 
 function Service() {
-    console.log(Data)
     return (
         <section className='service'>
             <h1 className='text-center my-5'>Service I provide</h1>
