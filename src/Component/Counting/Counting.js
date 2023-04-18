@@ -7,8 +7,9 @@ function Counting() {
     return (
         <>
             <ScrollTrigger onEnter={()=>setCounter(true)} onExit={()=>setCounter(false)}>
-                <div className='counting'>
-                    <div className='counting-container'>
+            <section>
+            <div className='counting mt-5'>
+                    <div className='counting-container '>
                         <div className='counting-child'>
                         {
                                 counter && <h1><CountUp start={0} end={400} duration={2} delay={0} />+</h1>
@@ -29,6 +30,7 @@ function Counting() {
                         </div>
                     </div>
                 </div>
+            </section>
             </ScrollTrigger>
 
         </>
