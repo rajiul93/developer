@@ -7,14 +7,13 @@
     }
 
     .who-am-i-child {
-        display: grid;
-        grid-template-columns: 100%;
-        height: 780px;
+       display: flex;
+       flex-direction: column;
+     
         align-items: center;
     }
 
     .who-am-i img {
-        margin-top: -100px;
         width: 100%;
     }
 
