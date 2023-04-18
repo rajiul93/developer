@@ -51,8 +51,8 @@ transition: .8s;
 
 .button:hover{
   color: #fff;
-background-color: rgb(21, 38, 219);
-border: 2px solid rgb(21, 38, 219);
+background-color: #0366D6;
+border: 2px solid #0366D6;
 
 
 }

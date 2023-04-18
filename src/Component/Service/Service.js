@@ -14,7 +14,7 @@ function Service() {
                         Data.map((data, index) => {
                             const { title, img, des } = data;
 
-                            return <div className="col-md-4 pd-container col-sm-6 mb-4 overflow-hidden  text-center ">
+                            return <div key={index} className="col-md-4 pd-container col-sm-6 mb-4 overflow-hidden  text-center ">
                                 <div className='bg-light'>
                                     <div className='service-img-container'>
                                         <img className='service-img img-fluid' src={img} alt="" />

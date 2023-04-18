@@ -2,8 +2,8 @@ import React from 'react'
 import "./WhoAnI.css"
 function WhoAnI() {
     return (
-        <div className='bg-white'>
-            <div className='who-am-i '>
+        <div className='bg-white '>
+            <div className='who-am-i  '>
                 <div className='who-am-i-child'>
                     <div className='who-am-i-1 mb-4'>
                         <h2 className='fs-4'>Who am I</h2>
