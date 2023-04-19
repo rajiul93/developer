@@ -1,0 +1,51 @@
+@media(max-width:600px) {
+    .review {
+        min-width: 360px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:601px) {
+    .review {
+        min-width: 550px;
+        padding: 0 35px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:992px) {
+    .review {
+        max-width: 900px;
+        padding: 0 15px;
+    }
+}
+
+.review p {
+    font-size: 13px;
+}
+
+.swiper {
+    width: 100%;
+    padding: 10px;
+    min-height: 220px;
+}
+
+.swiper-slide {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 5s ease;
+}
+
+.swiper-slide:hover {
+    box-shadow: 1px 3px 3px 1px rgb(214, 212, 212);
+
+    transition: all .3s ease;
+
+}

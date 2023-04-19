@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Component/Footer/Footer'
 import Navbar from '../Component/Navbar/Navbar'
 
 function About() {
@@ -6,7 +7,10 @@ function About() {
     <div>
       <Navbar />
 
-      About</div>
+      <h1>About</h1>
+      <Footer />
+      
+      </div>
   )
 }
 

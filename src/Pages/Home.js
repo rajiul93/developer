@@ -16,10 +16,7 @@ function Home() {
       <HeroSection />
       <Service />
       <WhoAnI />
-
       <Counting />
-
-
       <WhyMe />
       <Review />
       <Footer />
