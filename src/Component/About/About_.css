@@ -1,0 +1,27 @@
+@media(max-width:600px){
+    .about{
+        min-width: 360px;
+        padding: 0 15px;
+        margin: 0 auto;
+
+    }
+    .about p{
+font-size: 15px;
+    }
+}
+@media(min-width:601px){
+    .about{
+        min-width: 550px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .about p{
+        font-size: 15px;
+    }
+}
+@media(min-width:992px){
+    .about{
+        max-width: 900px;
+        padding: 0 15px;
+    }
+}
