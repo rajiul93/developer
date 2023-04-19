@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from "./Pages/About";
+import AboutPage from "./Pages/About";
 import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact";
 import Error from "./Pages/Error";
@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/service" element={<Service />} />

@@ -1,18 +1,18 @@
 import React from 'react'
-import About_ from '../Component/About/About_'
+import AboutComponent from '../Component/AboutC/About_.js'
 import Footer from '../Component/Footer/Footer'
 import Navbar from '../Component/Navbar/Navbar'
 
-function About() {
+function AboutPage() {
   return (
     <div>
       <Navbar />
 
-     <About_ />
+     <AboutComponent />
       <Footer />
 
     </div>
   )
 }
 
-export default About
+export default AboutPage

@@ -1,7 +1,7 @@
 import React from 'react';
 import "./About_.css";
 
-function About_() {
+function AboutComponent() {
     return (
         <div className='mt-5'>
             <div className='d-flex gap-3 about '>
@@ -34,4 +34,4 @@ function About_() {
     )
 }
 
-export default About_
+export default AboutComponent
