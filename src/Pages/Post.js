@@ -12,7 +12,7 @@ function Post() {
     return (
         <div>
             <Navbar />
-            <div style={{ maxWidth: "900px", margin: "0 auto" }} className='my-5'>
+            <div style={{ maxWidth: "900px", margin: "0 auto" ,padding:"0 15px" }} className='my-5'>
                 {
                     content.map((pd, ind) => {
                         const { img, title, des, description_1, description_2, description_3, description_4, description_5, description_6 } = pd
