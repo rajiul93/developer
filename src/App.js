@@ -5,6 +5,7 @@ import Contact from "./Pages/Contact";
 import Error from "./Pages/Error";
 import Home from "./Pages/Home";
 import Portfolio from "./Pages/Portfolio";
+import Post from "./Pages/Post";
 import Service from "./Pages/Service";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/service" element={<Service />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/*" element={<Error />} />
+        <Route path="/post/:id" element={<Post />} />
       </Routes>
     </BrowserRouter>
 

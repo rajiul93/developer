@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import "./Navbar.css";
 
 function Navbar() {
@@ -19,7 +19,8 @@ function Navbar() {
             {/* computer nav */}
             <div className='nav-container_1'>
                 <div className='navbar_1'>
-                    <div><h2 className='fs-4 mt-2'>I'm Juwel</h2></div>
+                <div><Link style={{textDecoration:"none", color:"#222222"}} to="/"><h2 className=''>I'm Juwel</h2></Link></div>
+
 
                     <ul >
                         <NavLink to="/" className="link">
@@ -50,7 +51,7 @@ function Navbar() {
             {/* mobile nav */}
             <div className='nav-container-2'>
                 <div className='navbar_2 position-relative px-3'>
-                    <div><h2 className=''>I'm Juwel</h2></div>
+                    <div><Link style={{textDecoration:"none", color:"#222222"}} to="/"><h2 className=''>I'm Juwel</h2></Link></div>
 
                     <div onClick={barClick} className='menu-control '>
                         <div className='bar-container'>
